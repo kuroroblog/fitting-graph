@@ -42,33 +42,34 @@ with open('result.txt') as f:
 #####################################
 # <ここからグラフ描画>
 
-# 参考 : https://qiita.com/trami/items/b501abe7667e55ab2c9f
-fig, ax = plt.subplots()
+# グラフ1 ##################
 
-# 参考 : https://www.delftstack.com/ja/howto/matplotlib/how-to-hide-axis-text-ticks-and-or-tick-labels-in-matplotlib/#:~:text=%E6%80%A7%E3%81%8C%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99%E3%80%82-,%E8%BB%B8%E3%81%AE%E3%83%A9%E3%83%99%E3%83%AB%E3%82%92%E5%90%AB%E3%82%80%E8%BB%B8%E3%82%92%E9%9D%9E%E8%A1%A8%E7%A4%BA%E3%81%AB,%E3%82%92%E9%9D%9E%E8%A1%A8%E7%A4%BA%E3%81%AB%E3%81%97%E3%81%BE%E3%81%99%E3%80%82
-ax.axes.xaxis.set_ticks([])
-ax.axes.yaxis.set_ticks([])
+# 参考 : https://qiita.com/trami/items/b501abe7667e55ab2c9f
+plt.subplot(2, 1, 1)
+
+# 参考 : https://tech-market.org/matplotlib-delete-ticks/
+plt.xticks([])
+plt.yticks([])
 
 # グラフのタイトル
-ax.set_title('fitting graph1')
+plt.title('fitting graph1')
 # x軸ラベル
 plt.xlabel("wave_length")
 # y軸ラベル
 plt.ylabel("light_intensity")
 
 # 実験値 - グラフ
-ax.plot(np.array(experiment_wave_length), np.array(experiment_light_intensity), color="purple", label='experiment value')
+plt.plot(np.array(experiment_wave_length), np.array(experiment_light_intensity), color="purple", label='experiment value')
 
 COLORS = ['red', 'blue', 'green', 'yellow', 'black', 'pink', 'gold', 'violet', 'orange', 'magenta', 'cyan']
 # 理論値 - グラフ
 for i in range(len(model_light_intensity)):
-    ax.plot(np.array(model_wave_length), np.array(model_light_intensity[i]), color=random.choice(COLORS), label='model value' + str(i + 1))
-
-# レイアウトの設定
-fig.tight_layout()
+    plt.plot(np.array(model_wave_length), np.array(model_light_intensity[i]), color=random.choice(COLORS), label='model value' + str(i + 1))
 
 # 参考 : https://it-ojisan.tokyo/matplotlib-label/
 plt.legend()
 
 plt.show()
+#########################
+
 #####################################
