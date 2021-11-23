@@ -5,7 +5,7 @@
 
 | サービス | version |
 | ------------- | ------------- |
-| Python  | 3.8.9  |
+| Python  | 3.9.4  |
 
 ## zipをダウンロードしてから動作確認する
 1. https://github.com/kuroroblog/fitting-graph へアクセスする。
