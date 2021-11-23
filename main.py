@@ -50,7 +50,7 @@ ax.axes.xaxis.set_ticks([])
 ax.axes.yaxis.set_ticks([])
 
 # グラフのタイトル
-ax.set_title('fitting test sample')
+ax.set_title('fitting graph')
 # x軸ラベル
 plt.xlabel("wave_length")
 # y軸ラベル
