@@ -19,6 +19,7 @@
 9. `$ python main.py`を実行する。
 
 ## 結果画像
+<img width="1680" alt="screenshot 2021-11-23 19 35 28" src="https://user-images.githubusercontent.com/23373288/143009113-f6158b5a-b16f-4c3e-9e20-493e70a8af45.png">
 
 ## 参考文献
 https://note.nkmk.me/python-pip-install-requirements/
