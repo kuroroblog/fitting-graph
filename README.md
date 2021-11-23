@@ -19,3 +19,6 @@
 9. `$ python main.py`を実行する。
 
 ## 結果画像
+
+## 参考文献
+https://note.nkmk.me/python-pip-install-requirements/
